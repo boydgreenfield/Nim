@@ -12,7 +12,7 @@
 ## report at program exit.
 
 when not defined(profiler) and not defined(memProfiler):
-  {.warning: "Profiling support is turned off!".}
+  {.warning: "Profiling support is turned off! Enable profiling by passing `-d:profiler` to the compiler.".}
 
 # We don't want to profile the profiling code ...
 {.push profiler: off.}
